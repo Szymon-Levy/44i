@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Czterdzieści Cztery I</title>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/x-icon">
+
+  <!--
+    - google fonts
+  -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!--
+    - remix icons
+  -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!--
+    - custom css
+  -->
+  <link rel="stylesheet" href="/assets/css/style.css?v=1">
+</head>
+
+<body>
+
+  <!--
+  - #HERO
+  -->
+  <section class="hero" data-hero-animations>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="hero__logo">
+          <img src="/assets/images/logo.svg?v=1" alt="logo 44i">
+        </div>
+
+        <div class="hero__content">
+          <div class="hero__sup-text">Zespół rockowy</div>
+
+          <h1 class="hero__title h1">Czterdzieści <br>cztery i</h1>
+
+          <button class="btn btn--line" data-scroll-to-player>Odsłuchaj</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  - #MUSIC PLAYER
+  -->
+
+  <section class="player">
+    <div class="container">
+      <div class="row">
+        <div class="player__wrapper" data-player data-player-aminations>
+          <div class="player-column">
+            <div class="player__title h2">Ułuda</div>
+
+            <div class="player__app">
+              <div class="player__controls">
+                <button class="player__play-btn btn" data-play>
+                  <i class="ri-play-mini-fill"></i>
+                </button>
+              </div>
+
+              <div class="player__progress">
+                <audio src="/assets/music/uluda-2.mp3" data-audio></audio>
+                <div class="player__duration" data-duration>2:59</div>
+
+                <div class="player__progress-bar" data-progress-bar>
+                  <div class="player__progress-current" data-progress-current></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cover-column">
+            <div class="player__cover">
+              <img src="/assets/images/album-cover.webp?v=1" alt="okładka płyty">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  - #MEMBERS
+  -->
+  <section class="members" data-members-animations>
+    <div class="container">
+      <div class="row">
+        <div class="section__title h1">Skład:</div>
+
+        <ul class="members__list members__list--right">
+          <li>
+            <span class="members__name">1. Paweł Muller</span>
+            <span class="members__description">Słowa, wokal, gitara</span>
+          </li>
+
+          <li>
+            <span class="members__name">2. Szymon Lewandowski</span>
+            <span class="members__description">Bębny</span>
+          </li>
+
+          <li>
+            <span class="members__name">3. Piotr Szpunar</span>
+            <span class="members__description">Bas</span>
+          </li>
+
+          <li>
+            <span class="members__name">4. Artur Pachlewski</span>
+            <span class="members__description">Klarnety</span>
+          </li>
+
+          <li>
+            <span class="members__name">5. Jacek Wąsowski</span>
+            <span class="members__description">Producja, gitary</span>
+          </li>
+        </ul>
+
+        <div class="section__title h1 right">Gościnnie:</div>
+
+        <ul class="members__list members__list--left">
+          <li>
+            <span class="members__name">1. Jędrzej Kodymowski</span>
+            <span class="members__description">Gitara</span>
+          </li>
+
+          <li>
+            <span class="members__name">2. Krzysztof Tomaszewski</span>
+            <span class="members__description">Trąbka</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  - #FOOTER
+  -->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer__copyright">
+          <i class="ri-copyright-line"></i>
+          Wszelkie prawa zastrzeżone
+        </div>
+
+        <a href="https://youtu.be/Nz_A0kyOPtY?si=-h2ppv5TpHAXzjDM" class="footer__icon" target="_blank">
+          <i class="ri-youtube-line"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+    - scroll reveal
+  -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--
+    - custom js
+  -->
+  <script src="/assets/js/script.js?v=1.1"></script>
+</body>
+</html>

@@ -57,15 +57,15 @@ if($heroSection){
 
 }
 
-const $player = document.querySelector('[data-player-aminations]')
+const $players = document.querySelectorAll('[data-player-aminations]')
 
-if ($player){
-  ScrollReveal().reveal($player, fadeInUp);
+if ($players){
+  ScrollReveal().reveal($players, fadeInUp);
 }
 
 const $members = document.querySelector('[data-members-animations]')
 
-if ($player){
+if ($members){
   const $titles = $members.querySelectorAll('.section__title')
   const $membersRight = $members.querySelectorAll('.members__list--right li')
   const $membersLeft = $members.querySelectorAll('.members__list--left li')
@@ -98,17 +98,16 @@ if ($scrollToPlayerBtn){
   #MUSIC PLAYER
 \*----------------------------------*/
 
-const $musicPlayer = document.querySelector('[data-player]')
+const $musicPlayers = document.querySelectorAll('[data-player]')
 
-if ($musicPlayer){
-  const $play = $musicPlayer.querySelector('[data-play]')
-  const $duration = $musicPlayer.querySelector('[data-duration]')
-  const $progressBar = $musicPlayer.querySelector('[data-progress-bar]')
-  const $progressBarCurrent = $musicPlayer.querySelector('[data-progress-current]')
-  const $audio = $musicPlayer.querySelector('[data-audio]')
+const musicPlay = (player)=>{
+  const $play = player.querySelector('[data-play]')
+  const $progressBar = player.querySelector('[data-progress-bar]')
+  const $progressBarCurrent = player.querySelector('[data-progress-current]')
+  const $audio = player.querySelector('[data-audio]')
 
   const playSong = () => {
-    $musicPlayer.classList.add('play')
+    player.classList.add('play')
     $play.querySelector('i').classList.remove('ri-play-mini-fill')
     $play.querySelector('i').classList.add('ri-pause-mini-fill')
 
@@ -116,7 +115,7 @@ if ($musicPlayer){
   }
 
   const pauseSong = () => {
-    $musicPlayer.classList.remove('play')
+    player.classList.remove('play')
     $play.querySelector('i').classList.add('ri-play-mini-fill')
     $play.querySelector('i').classList.remove('ri-pause-mini-fill')
 
@@ -138,17 +137,8 @@ if ($musicPlayer){
     $audio.currentTime = (clickX / width) * duration
   }
 
-  // const setDuration = ()=> {
-  //   const minutes = Math.floor($audio.duration / 60)
-  //   let seconds = $audio.duration - minutes * 60
-  //   seconds = Math.floor(seconds)
-  //   $duration.textContent = `${minutes}:${seconds}`
-  // }
-
-  // setDuration()
-
   $play.addEventListener('click', ()=>{
-    const isPlaying = $musicPlayer.classList.contains('play')
+    const isPlaying = player.classList.contains('play')
 
     if (isPlaying) {
       pauseSong()
@@ -161,4 +151,11 @@ if ($musicPlayer){
 
   $progressBar.addEventListener('click', setProgressPosition)
 
+  $audio.addEventListener('ended', pauseSong)
+}
+
+if ( $musicPlayers.length ) {
+  $musicPlayers.forEach((player) => {
+    musicPlay(player)
+  })
 }

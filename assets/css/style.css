@@ -252,8 +252,13 @@ body{
 .player .player__wrapper{
   display: flex;
   flex-direction: column;
+  margin-bottom: 5rem;
   padding: 3rem var(--side-space);
   background-color: var(--clr-dark);
+}
+
+.player .player__wrapper:last-child{
+  margin-bottom: 0;
 }
 
 .player .player__title {
@@ -579,6 +584,7 @@ body{
 
   .player .player__wrapper {
     padding: 7.5rem 6rem;
+    margin-bottom: 7rem;
     flex-direction: row-reverse;
   }
 

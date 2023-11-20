@@ -22,7 +22,7 @@
   <!--
     - custom css
   -->
-  <link rel="stylesheet" href="/assets/css/style.css?v=1">
+  <link rel="stylesheet" href="/assets/css/style.css?v=1.1">
 </head>
 
 <body>
@@ -68,7 +68,36 @@
 
               <div class="player__progress">
                 <audio src="/assets/music/uluda-2.mp3" data-audio></audio>
-                <div class="player__duration" data-duration>2:59</div>
+                <div class="player__duration" data-duration>2.59</div>
+
+                <div class="player__progress-bar" data-progress-bar>
+                  <div class="player__progress-current" data-progress-current></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cover-column">
+            <div class="player__cover">
+              <img src="/assets/images/album-cover.webp?v=1" alt="okładka płyty">
+            </div>
+          </div>
+        </div>
+
+        <div class="player__wrapper" data-player data-player-aminations>
+          <div class="player-column">
+            <div class="player__title h2">Hymnum</div>
+
+            <div class="player__app">
+              <div class="player__controls">
+                <button class="player__play-btn btn" data-play>
+                  <i class="ri-play-mini-fill"></i>
+                </button>
+              </div>
+
+              <div class="player__progress">
+                <audio src="/assets/music/hymnum-2.mp3" data-audio></audio>
+                <div class="player__duration" data-duration>4:01</div>
 
                 <div class="player__progress-bar" data-progress-bar>
                   <div class="player__progress-current" data-progress-current></div>
@@ -97,28 +126,28 @@
 
         <ul class="members__list members__list--right">
           <li>
-            <span class="members__name">1. Paweł Muller</span>
+            <span class="members__name">Paweł Muller</span>
             <span class="members__description">Słowa, wokal, gitara</span>
           </li>
 
           <li>
-            <span class="members__name">2. Szymon Lewandowski</span>
+            <span class="members__name">Szymon Lewandowski</span>
             <span class="members__description">Bębny</span>
           </li>
 
           <li>
-            <span class="members__name">3. Piotr Szpunar</span>
+            <span class="members__name">Piotr Szpunar</span>
             <span class="members__description">Bas</span>
           </li>
 
           <li>
-            <span class="members__name">4. Artur Pachlewski</span>
+            <span class="members__name">Artur Pachlewski</span>
             <span class="members__description">Klarnety</span>
           </li>
 
           <li>
-            <span class="members__name">5. Jacek Wąsowski</span>
-            <span class="members__description">Producja, gitary</span>
+            <span class="members__name">Jacek Wąsowski</span>
+            <span class="members__description">Producja, gitary itp.</span>
           </li>
         </ul>
 
@@ -126,12 +155,12 @@
 
         <ul class="members__list members__list--left">
           <li>
-            <span class="members__name">1. Jędrzej Kodymowski</span>
+            <span class="members__name">Jędrzej Kodymowski</span>
             <span class="members__description">Gitara</span>
           </li>
 
           <li>
-            <span class="members__name">2. Krzysztof Tomaszewski</span>
+            <span class="members__name">Krzysztof Tomaszewski</span>
             <span class="members__description">Trąbka</span>
           </li>
         </ul>
@@ -166,6 +195,6 @@
   <!--
     - custom js
   -->
-  <script src="/assets/js/script.js?v=1.1"></script>
+  <script src="/assets/js/script.js?v=1.2"></script>
 </body>
 </html>

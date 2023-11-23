@@ -10,8 +10,8 @@
   
     --clr-primary: #00B2FF;
     --clr-primary-alt: #066b96;
-    --clr-body-bg: #111111;
-    --clr-dark: #171717;
+    --clr-body-bg: #0E0848;
+    --clr-dark: #191167;
     --clr-white: #ffffff;
     --clr-body-text: #ffffff;
     --clr-border: rgba(255, 255, 255, 0.2);
@@ -23,6 +23,8 @@
     /* font family */
     --ff-title: 'Syne', sans-serif;
     --ff-body: 'Syne', sans-serif;
+    /* --ff-title: 'Playfair Display', serif;
+    --ff-body: 'Playfair Display', serif; */
   
     /* font size */
     --fs-base: 62.5%;
@@ -151,14 +153,14 @@ body{
   letter-spacing: .1em;
   line-height: normal;
   border-bottom: 1px solid;
-  color: var(--clr-primary);
+  color: var(--clr-white);
   font-weight: 700;
   transition: color .4s, border-color .4s;
 }
 
 .btn--line:hover,
 .btn--line:focus-visible{
-  color: var(--clr-primary-alt);
+  color: var(--clr-primary);
 }
 
 
@@ -172,7 +174,7 @@ body{
   align-items: center;
   min-height: 550px;
   padding: 5rem 0 10rem;
-  background-image: url("/assets/images/hero-bg.jpg?v=1");
+  background-image: url("/assets/images/hero-bg.webp?v=1.1");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,7 +189,7 @@ body{
   position: absolute;
   left: 0;
   top: 0;
-  background: linear-gradient(180deg, rgba(17, 17, 17, 0.4), rgb(17 17 17));
+  background: linear-gradient(1800deg, rgba(14,8,72,1) 0%, rgba(14,8,72,1) 0%, rgba(14,8,72,0) 85%);
 }
 
 .hero > div{
@@ -231,13 +233,15 @@ body{
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  text-shadow: 1px 1px 2px var(--clr-body-bg);
 }
 
 .hero .hero__title{
   margin: 3rem 0 3rem;
   font-size: 2.5rem;
   text-transform: uppercase;
-  color: var(--clr-primary);
+  color: var(--clr-white);
+  text-shadow: 1px 1px 2px var(--clr-body-bg);
 }
 
 
@@ -247,6 +251,7 @@ body{
 
 .player{
   overflow: hidden;
+  padding-top: var(--section-block-space-400);
 }
 
 .player .player__wrapper{

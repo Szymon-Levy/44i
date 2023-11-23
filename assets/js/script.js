@@ -14,7 +14,6 @@ const fadeInUp = {
   interval: 150,
   opacity: 0,
   origin: 'bottom',
-  reset: true
 }
 
 const fadeInRight = {
@@ -25,7 +24,6 @@ const fadeInRight = {
   interval: 150,
   opacity: 0,
   origin: 'right',
-  reset: true
 }
 
 const fadeInLeft = {
@@ -36,7 +34,6 @@ const fadeInLeft = {
   interval: 150,
   opacity: 0,
   origin: 'left',
-  reset: true
 }
 
 /**
